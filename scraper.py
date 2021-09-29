@@ -4,31 +4,31 @@ import csv
 from selenium import webdriver
 
 # URL to the website
-# url='http://www.stackoverflow.com/questions'
+URL ='http://www.stackoverflow.com/questions'
 
 # # Getting the html file and parsing with html.parser
-# html=requests.get(url)
-# bs=BeautifulSoup(html.text,'html.parser')
+html=requests.get(URL)
+bs=BeautifulSoup(html.text,'html.parser')
 
 # # Tries to open the file 
 
-# csv_file=open('stack_overflow.csv','w')
-# fieldnames=['question','author']
-# dictwriter=csv.DictWriter(csv_file,fieldnames=fieldnames)
+csv_file=open('stack_overflow.csv','w')
+fieldnames=['question','author']
+dictwriter=csv.DictWriter(csv_file,fieldnames=fieldnames)
 
 # # Writes the headers
-# dictwriter.writeheader()
+dictwriter.writeheader()
 
 
 # # Loops through quote in the page
 
-# for post in bs.findAll('div', {'class' : 'question-summary'})[:10]:
-#     question = post.find('a', {'class': 'question-hyperlink'}).text
-#     author = post.find('div', {'class' : 'user-details'}).text.split('\n')
-#     dictwriter.writerow({'question':question, 'author': author[1]})
+for post in bs.findAll('div', {'class' : 'question-summary'})[:10]:
+    question = post.find('a', {'class': 'question-hyperlink'}).text
+    author = post.find('div', {'class' : 'user-details'}).text.split('\n')
+    dictwriter.writerow({'question':question, 'author': author[1]})
 
 
-# csv_file.close()
+csv_file.close()
 
 
 # Selenium version
@@ -37,7 +37,7 @@ from selenium import webdriver
 DRIVER_PATH = '/Users/philchaplin/Documents/documents/py131/selenium_practice/chromedriver'
 driver = webdriver.Chrome(DRIVER_PATH)
 fieldnames1 = ['question1', 'author1']
-driver.get('http://www.stackoverflow.com/questions')
+driver.get(URL)
 csv_file1 = open('selenium_stack_overflow.csv','w')
 dictwriter=csv.DictWriter(csv_file1,fieldnames=fieldnames1)
 

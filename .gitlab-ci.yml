@@ -11,6 +11,7 @@ image: python:3.8
 #     - venv/
 
 before_script:
+  - apt-get python
   - python --version  # Print out python version for debugging
   - python3 -m venv venv
   - source venv/bin/activate

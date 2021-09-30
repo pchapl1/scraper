@@ -44,20 +44,20 @@ csv_file.close()
 # Selenium version
 
 
-# DRIVER_PATH = '/Users/philchaplin/Documents/documents/py131/selenium_practice/chromedriver'
-# driver = webdriver.Chrome(DRIVER_PATH)
-# fieldnames1 = ['question1', 'author1']
-# driver.get(URL)
-# csv_file1 = open('selenium_stack_overflow.csv','w')
-# dictwriter=csv.DictWriter(csv_file1,fieldnames=fieldnames1)
+DRIVER_PATH = '/Users/philchaplin/Documents/documents/py131/selenium_practice/chromedriver'
+driver = webdriver.Chrome(DRIVER_PATH)
+fieldnames1 = ['question1', 'author1']
+driver.get(URL)
+csv_file1 = open('selenium_stack_overflow.csv','w')
+dictwriter=csv.DictWriter(csv_file1,fieldnames=fieldnames1)
 
-# dictwriter.writeheader()
+dictwriter.writeheader()
 
-# posts =  driver.find_elements_by_class_name('summary')[:10]
-# for post in posts:
-#     question1 = post.find_element_by_class_name('question-hyperlink').text
-#     author1 = post.find_element_by_class_name('user-details').text.split('\n')
-#     dictwriter.writerow({'question1':question1, 'author1': author1[0]})
+posts =  driver.find_elements_by_class_name('summary')[:10]
+for post in posts:
+    question1 = post.find_element_by_class_name('question-hyperlink').text
+    author1 = post.find_element_by_class_name('user-details').text.split('\n')
+    dictwriter.writerow({'question1':question1, 'author1': author1[0]})
 
-# csv_file1.close()
-# driver.close()
+csv_file1.close()
+driver.close()

@@ -17,13 +17,13 @@ before_script:
   - pip install -r requirements.txt
 
 stages:
-  - Static Analysis
+  # - Static Analysis
   - Test
 
-flake8:
-  stage: Static Analysis
-  script:
-  - flake8 --max-line-length=150 --ignore=E266 scraper.py || true
+# flake8:
+#   stage: Static Analysis
+#   script:
+#   - flake8 --max-line-length=150 --ignore=E266 scraper.py || true
 
 pytest:
   stage: Test

@@ -41,7 +41,7 @@ coverage:
 scrape:
   stage: Job
   rules:
-    - if: "$CI_PIPELINE_SOURCE == 'merge_request_event'"
+    - if: "$CI_PIPELINE_SOURCE == 'push'"
       when: manual
       allow_failure: true
     - if: "$CI_PIPELINE_SOURCE == 'schedule'"

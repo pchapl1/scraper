@@ -47,4 +47,4 @@ scrape:
     - if: "$CI_PIPELINE_SOURCE == 'schedule'"
       when: always
   script:
-  - scraper.py
+  - python3 scraper.py

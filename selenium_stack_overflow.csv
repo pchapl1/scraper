@@ -1,1 +1,11 @@
 question1,author1
+Roadmap for Quarkus Jakarta EE 9+ (javax.* to jakarta.* namespace change),Michael
+apache rewrite with and without Parameters,Matthias Nicolas
+Pandas resampling by day which not start at 00:00,martin genot
+Pyspark to filter date in format yyyy/mm/dd,John
+Equivalence of movvar matlab function using python,BetterEnglish
+Plot multiple plots on same figure using loops in pandas,Jack
+IIS. How rewrite/redirect from url https://site1.com/Repo/* to https://site2.com/Repo/*?,Andrew Foxis
+Android jfrog publications issue with multiple modules in the app,Shruthi N
+"Will an official python38 rpm be available for centos 7, since python36 is EOL this year, and when?",jamshid
+Tensorflow Keras: Is there a difference defining the acitvation function separately for Conv2d?,starbeamrainbowlabs

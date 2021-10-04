@@ -19,11 +19,7 @@ before_script:
 stages:
   - Static Analysis
   - Test
-
-# flake8:
-#   stage: Static Analysis
-#   script:
-#   - flake8 --max-line-length=150 --ignore=E266 scraper.py || true
+  - Job
 
 pytest:
   stage: Test
@@ -42,8 +38,13 @@ coverage:
   script:
   - pylint scraper.py
 
-# coverage:
-#   stage: Test
-#   allow_failure: true
-#   script:
-#   - python -m pytest --cov-report term-missing --cov=project || true
+scrape:
+  stage: Job
+  script:
+  - scraper.py
+  rules:
+    # - if: "$CI_PIPELINE_SOURCE == 'merge_request_event'"
+    #   when: manual
+    #   allow_failure: true
+    - if: "$CI_PIPELINE_SOURCE == 'schedule'"
+      when: always

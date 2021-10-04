@@ -32,12 +32,6 @@ pylint:
   script:
   - pylint scraper.py
   
-coverage:
-  stage: Test
-  allow_failure: true
-  script:
-  - pylint scraper.py
-
 scrape:
   stage: Job
   rules:

@@ -15,7 +15,7 @@ bs=BeautifulSoup(html.text,'html.parser')
 
 # # Tries to open the file
 
-csv_file=open('stack_overflow.csv','w')
+csv_file=open('stack_overflow.csv','w', encoding='UTF-8')
 fieldnames=['question','author']
 dictwriter=csv.DictWriter(csv_file,fieldnames=fieldnames)
 
@@ -48,7 +48,7 @@ DRIVER_PATH = '/Users/philchaplin/Documents/documents/py131/selenium_practice/ch
 driver = webdriver.Chrome(DRIVER_PATH)
 fieldnames1 = ['question1', 'author1']
 driver.get(URL)
-csv_file1 = open('selenium_stack_overflow.csv','w')
+csv_file1 = open('selenium_stack_overflow.csv','w', encoding='UTF-8')
 dictwriter=csv.DictWriter(csv_file1,fieldnames=fieldnames1)
 
 dictwriter.writeheader()

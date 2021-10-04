@@ -11,13 +11,13 @@ cache:
     - venv/
 
 before_script:
-  - python --version  # Print out python version for debugging
-  - python3 -m venv venv
-  - source venv/bin/activate
+  - python3 --version  # Print out python version for debugging
+  # - python3 -m venv venv
+  # - source venv/bin/activate
   - pip install -r requirements.txt
 
 stages:
-  # - Static Analysis
+  - Static Analysis
   - Test
 
 # flake8:
@@ -28,7 +28,7 @@ stages:
 pytest:
   stage: Test
   script:
-  - python -m pytest || true
+  - python3 -m pytest || true
 
 pylint:
   stage: Static Analysis
@@ -40,4 +40,10 @@ coverage:
   stage: Test
   allow_failure: true
   script:
-  - python -m pytest --cov-report term-missing --cov=project || true
+  - pylint scraper.py
+
+# coverage:
+#   stage: Test
+#   allow_failure: true
+#   script:
+#   - python -m pytest --cov-report term-missing --cov=project || true

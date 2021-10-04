@@ -12,7 +12,7 @@ image: python:3.9
 
 before_script:
   - python --version  # Print out python version for debugging
-  - python3 -m venv venv
+  - python -m venv venv
   - source venv/bin/activate
   - pip install -r requirements.txt
 

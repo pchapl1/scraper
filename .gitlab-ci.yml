@@ -30,6 +30,12 @@ pytest:
   script:
   - python -m pytest || true
 
+pylint:
+  stage: Static Analysis
+  allow_failure: true
+  script:
+  - pylint scraper.py
+  
 coverage:
   stage: Test
   allow_failure: true

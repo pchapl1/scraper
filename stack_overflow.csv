@@ -1,11 +1,11 @@
-question,author
-Roadmap for Quarkus Jakarta EE 9+ (javax.* to jakarta.* namespace change),i
-apache rewrite with and without Parameters,a
-Pandas resampling by day which not start at 00:00,a
-Pyspark to filter date in format yyyy/mm/dd,o
-Equivalence of movvar matlab function using python,e
-Plot multiple plots on same figure using loops in pandas,a
-IIS. How rewrite/redirect from url https://site1.com/Repo/* to https://site2.com/Repo/*?,n
-Android jfrog publications issue with multiple modules in the app,h
-"Will an official python38 rpm be available for centos 7, since python36 is EOL this year, and when?",a
-Tensorflow Keras: Is there a difference defining the acitvation function separately for Conv2d?,t
+question,author,date_asked,tag_list
+text-align in <body> not applying to a nested class?,Worker1432,2021-10-04 18:07:46Z,"['html', 'css']"
+Google maps not showing house numbers,kedar,2021-10-04 18:07:45Z,"['angular', 'google-maps']"
+How do I make the math come out correctly using `size_t` numbers?,Pål Hart,2021-10-04 18:07:30Z,"['c++', 'c++17']"
+Setting Active Selector With No Outlines or Borders,Eric Nguyen,2021-10-04 18:07:24Z,['css']
+K-mer words in R,George Go,2021-10-04 18:07:23Z,['r']
+lwip to send data bigger than 64kb,Marco Martines,2021-10-04 18:07:14Z,"['c', 'embedded', 'xilinx', 'lwip', 'vitis-ai']"
+terraform GCP VPC connector creation issue,Harton,2021-10-04 18:07:10Z,"['networking', 'google-cloud-platform', 'terraform', 'cloud', 'terraform-provider-gcp']"
+In IBM Cloud can I import an object from SAS URL?,S G,2021-10-04 18:06:54Z,"['object', 'import', 'sas', 'cloud', 'websphere']"
+Why am I unable to open Laravel using this Docker configuration?,Matt Komarnicki,2021-10-04 18:06:29Z,"['php', 'laravel', 'docker']"
+exclude apostrophe from being removed,Sara Ree,2021-10-04 18:06:23Z,"['javascript', 'regex']"

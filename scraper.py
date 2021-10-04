@@ -1,8 +1,8 @@
-from bs4 import BeautifulSoup
-import requests
 import csv
-from selenium import webdriver
+import requests
 import sqlite3
+from bs4 import BeautifulSoup
+from selenium import webdriver
 
 
 
@@ -13,7 +13,7 @@ URL ='http://www.stackoverflow.com/questions'
 html=requests.get(URL)
 bs=BeautifulSoup(html.text,'html.parser')
 
-# # Tries to open the file 
+# # Tries to open the file
 
 csv_file=open('stack_overflow.csv','w')
 fieldnames=['question','author']
@@ -35,7 +35,7 @@ for post in bs.findAll('div', {'class' : 'question-summary'})[:10]:
 
     con = sqlite3.connect('scrapeymcscraperton.db')
     cur = con.cursor()
-    cur.execute('INSERT INTO questions VALUES ("%s","%s","%s","%s") ' % (question, author, date_asked, tag_list))
+    cur.execute('INSERT INTO questions VALUES ("%s","%s","%s","%s")'%(question, author, date_asked, tag_list))
     con.commit()
     con.close()
 csv_file.close()

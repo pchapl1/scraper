@@ -34,7 +34,7 @@ pylint:
   stage: Static Analysis
   allow_failure: true
   script:
-  - pylint quote_scraper.py
+  - pylint scraper.py
 
 # coverage:
 #   stage: Test

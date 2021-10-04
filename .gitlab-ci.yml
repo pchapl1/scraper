@@ -30,8 +30,8 @@ pytest:
   script:
   - python -m pytest || true
 
-coverage:
-  stage: Test
-  allow_failure: true
-  script:
-  - python -m pytest --cov-report term-missing --cov=project || true
+# coverage:
+#   stage: Test
+#   allow_failure: true
+#   script:
+#   - python -m pytest --cov-report term-missing --cov=project || true

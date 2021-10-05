@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div style="text-align: center;" class="col">
+                <h1>Welcome to ScrapeyMcScraperton</h1>
+                <h4>You can search for the following things from Stack Overflow...</h4>
+                <ul>
+                    <li style="list-style-type: none;">Questions</li>
+                    <li style="list-style-type: none;">Who asked the question</li>
+                    <li style="list-style-type: none;">the tags for the question</li>
+                    <li style="list-style-type: none;">the date the person asked the question</li>
+                </ul>
+                <br>
+                <br>
+                <h4>You can also use the following examples in the address bar to access more specific info..</h4>
+                <ul>
+                    <li style="list-style-type: none;">/posts/ i.e. posts/3 returns three posts. i.e. posts/ returns all posts</li>
+                    <li style="list-style-type: none;">/date/ i.e. /date/10-03-2021 returns posts from this date</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <form action="/search" method="get">
+                <div class="md-form active-cyan active-cyan-2 mb-3">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" name = 'q'>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .container {
+        margin-top: 3%;
+    }
+</style>

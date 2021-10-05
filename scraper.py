@@ -28,11 +28,11 @@ dictwriter.writeheader()
 for post in bs.findAll('div', {'class' : 'question-summary'})[:10]:
     question = post.find('a', {'class': 'question-hyperlink'}).text.replace('"', "'")
     author = post.find('div', {'class' : 'user-details'}).text.split('\n')[1]
-    date_asked = post.find('span', {'class' : 'relativetime'})['title']
+    date_asked = post.find('span', {'class' : 'relativetime'})['title'].strip()[:11]
+    date_asked = date_asked[5:].strip()+"-"+date_asked[:4]
     tags = post.findAll('a', {'class' : 'post-tag flex--item'})
     tag_list = [tag.text for tag in tags]
     dictwriter.writerow({'question':question, 'author': author, 'date_asked':date_asked, 'tag_list': tag_list})
-    print(author)
     con = sqlite3.connect('scrapeymcscraperton.db')
     cur = con.cursor()
     cur.execute('INSERT INTO questions VALUES ("%s","%s","%s","%s")' % (question, author, date_asked, tag_list))

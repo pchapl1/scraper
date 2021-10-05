@@ -1,11 +1,11 @@
 question,author,date_asked,tag_list
-text-align in <body> not applying to a nested class?,Worker1432,2021-10-04 18:07:46Z,"['html', 'css']"
-Google maps not showing house numbers,kedar,2021-10-04 18:07:45Z,"['angular', 'google-maps']"
-How do I make the math come out correctly using `size_t` numbers?,Pål Hart,2021-10-04 18:07:30Z,"['c++', 'c++17']"
-Setting Active Selector With No Outlines or Borders,Eric Nguyen,2021-10-04 18:07:24Z,['css']
-K-mer words in R,George Go,2021-10-04 18:07:23Z,['r']
-lwip to send data bigger than 64kb,Marco Martines,2021-10-04 18:07:14Z,"['c', 'embedded', 'xilinx', 'lwip', 'vitis-ai']"
-terraform GCP VPC connector creation issue,Harton,2021-10-04 18:07:10Z,"['networking', 'google-cloud-platform', 'terraform', 'cloud', 'terraform-provider-gcp']"
-In IBM Cloud can I import an object from SAS URL?,S G,2021-10-04 18:06:54Z,"['object', 'import', 'sas', 'cloud', 'websphere']"
-Why am I unable to open Laravel using this Docker configuration?,Matt Komarnicki,2021-10-04 18:06:29Z,"['php', 'laravel', 'docker']"
-exclude apostrophe from being removed,Sara Ree,2021-10-04 18:06:23Z,"['javascript', 'regex']"
+Transform each string according to the given algorithm and return the new sentence,James bond,10-05-2021,"['string', 'uppercase']"
+Translating/Formatting B2B communication data(JavaScript),AceWright39,10-05-2021,"['javascript', 'node.js', 'b2b']"
+Symfony deserialize object with a constructor,Matthew Zarbatany,10-05-2021,"['php', 'symfony', 'serialization', 'deserialization']"
+Fully qualified name in Eclipse CDT,Larry_C,10-05-2021,"['c++', 'eclipse', 'eclipse-cdt']"
+I can't seem to get out of the else if,a12edfwdfwefw,10-05-2021,"['java', 'if-statement']"
+ClosedXML Template not setting data into excel sheet,Kristofer,10-05-2021,"['c#', 'excel', 'closedxml']"
+Keycloak decision strategy for shared resource not working,Huy nguyen duc,10-05-2021,"['authorization', 'keycloak']"
+Customizing android to own hardware (embedded android),Chatdeschroedinger,10-05-2021,"['android', 'linux-kernel', 'embedded', 'embedded-linux']"
+Is this the most efficient JavaScript for comparing two arrays of objects and modifying properties?,thinker,10-05-2021,"['javascript', 'arrays', 'javascript-objects']"
+convert list inside string to list in pyspark,vinodetrx,10-05-2021,"['pyspark', 'apache-spark-sql']"

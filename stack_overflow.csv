@@ -1,11 +1,11 @@
 question,author,date_asked,tag_list
-Transform each string according to the given algorithm and return the new sentence,James bond,10-05-2021,"['string', 'uppercase']"
-Translating/Formatting B2B communication data(JavaScript),AceWright39,10-05-2021,"['javascript', 'node.js', 'b2b']"
-Symfony deserialize object with a constructor,Matthew Zarbatany,10-05-2021,"['php', 'symfony', 'serialization', 'deserialization']"
-Fully qualified name in Eclipse CDT,Larry_C,10-05-2021,"['c++', 'eclipse', 'eclipse-cdt']"
-I can't seem to get out of the else if,a12edfwdfwefw,10-05-2021,"['java', 'if-statement']"
-ClosedXML Template not setting data into excel sheet,Kristofer,10-05-2021,"['c#', 'excel', 'closedxml']"
-Keycloak decision strategy for shared resource not working,Huy nguyen duc,10-05-2021,"['authorization', 'keycloak']"
-Customizing android to own hardware (embedded android),Chatdeschroedinger,10-05-2021,"['android', 'linux-kernel', 'embedded', 'embedded-linux']"
-Is this the most efficient JavaScript for comparing two arrays of objects and modifying properties?,thinker,10-05-2021,"['javascript', 'arrays', 'javascript-objects']"
-convert list inside string to list in pyspark,vinodetrx,10-05-2021,"['pyspark', 'apache-spark-sql']"
+inegrate Pdf.js into blazor application,ghada,10-12-2021,"['javascript', '.net', 'pdf', 'blazor']"
+Adding a new card to the DB,Ilan Edri,10-12-2021,"['node.js', 'reactjs']"
+create HTML elements from javascript,Rithish,10-12-2021,"['javascript', 'html', 'frontend', 'dynamically-generated']"
+Stripe - every day charges,Daniel Protopopov,10-12-2021,['stripe-payments']
+Regex to match what's before or after a character in different situations,melokki,10-12-2021,"['javascript', 'regex']"
+Is it possible to suppress the stack trace from a thrown Exception in groovy declarative pipelines?,stillmaticone17,10-12-2021,"['jenkins', 'exception', 'groovy', 'jenkins-pipeline', 'jenkins-groovy']"
+How can I automatically download web pages for offline viewing?,Marco,10-12-2021,"['url', 'automation', 'emeditor']"
+HTTPClient for Authentication JSON in Swift,Mehreen Azam,10-12-2021,['ios']
+AirFlow 2.1.4 BaseHook password decryption problem,Roman  Taranov,10-12-2021,"['python', 'encryption', 'airflow', 'connection-string', 'fernet']"
+Logo does not align with the text in bootstrap header,sukhi,10-12-2021,"['html', 'css', 'reactjs', 'twitter-bootstrap', 'tailwind-css']"

@@ -43,6 +43,7 @@ def api_get_some_questions(num):
     cur = con.cursor()
     cur.execute("SELECT * FROM questions")
     results = cur.fetchall()[:num]
+    print(results)
     questions = []
     questions.append([item[0] for item in results])
     cur.close()
@@ -57,6 +58,7 @@ def api_get_dates(date):
     try:
         cur.execute(f"SELECT * FROM questions WHERE date == '{date}'")
         results = cur.fetchall()
+        print(results)
         cur.close()
         con.close()
         return jsonify(results)

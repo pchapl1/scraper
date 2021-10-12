@@ -49,4 +49,4 @@ deployment:
     - main
   script:
     - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/scraper-proj.git
-    - git push -f heroku master
+    - git push -f heroku main

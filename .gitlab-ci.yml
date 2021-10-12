@@ -18,8 +18,8 @@ before_script:
 stages:
   - Static Analysis
   - Test
-  - Job
   - Deploy
+  - Job
 
 pytest:
   stage: Test
